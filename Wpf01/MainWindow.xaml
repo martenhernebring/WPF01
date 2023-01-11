@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="My First GUI" Height="450" Width="800">
     <Grid>
-		<Button Height="50" Width="100">Click Me</Button>
+		<Button>
+			<Button.Width>200</Button.Width>
+			<Button.Height>100</Button.Height>
+			<Button.FontSize>32</Button.FontSize>
+			<Button.Content>
+				<WrapPanel>
+					<TextBlock Foreground="Blue">Multi</TextBlock>
+					<TextBlock Foreground="Red">Colored</TextBlock>
+					<TextBlock Foreground="White">Button</TextBlock>
+				</WrapPanel>
+			</Button.Content>
+		</Button>
     </Grid>
 </Window>
