@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="My First GUI" Height="450" Width="800">
     <Grid>
-		<TextBlock HorizontalAlignment="Left" Margin="225,147,0,0" TextWrapping="Wrap" Text="Hello Morten" VerticalAlignment="Top"/>
+		<Button Content="Click Me" Height="50" Width="100"></Button>
     </Grid>
 </Window>
