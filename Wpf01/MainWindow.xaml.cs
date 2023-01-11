@@ -23,6 +23,28 @@ namespace Wpf01
 		public MainWindow()
 		{
 			InitializeComponent();
+
+			WrapPanel wrapPanel = new WrapPanel();
+			TextBlock blueTextBlock = new TextBlock();
+			blueTextBlock.Text = "Multi";
+			blueTextBlock.Foreground = Brushes.Blue;
+			wrapPanel.Children.Add(blueTextBlock);
+			TextBlock redTextBlock = new TextBlock();
+			redTextBlock.Text = "colored";
+			redTextBlock.Foreground = Brushes.Red;
+			wrapPanel.Children.Add(redTextBlock);
+			TextBlock whiteTextBlock = new TextBlock();
+			whiteTextBlock.Text = "button";
+			whiteTextBlock.Foreground = Brushes.White;
+			wrapPanel.Children.Add(whiteTextBlock);
+
+			Button button = new Button();
+			button.FontSize = 26;
+			button.Content = wrapPanel;
+
+			Grid grid = new Grid();
+			this.Content = grid;
+			grid.Children.Add(button);
 		}
 	}
 }
