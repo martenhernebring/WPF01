@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="My First GUI" Height="450" Width="800">
     <Grid>
-		<Button Content="Click Me" Height="50" Width="100"></Button>
+		<Button Height="50" Width="100">Click Me</Button>
     </Grid>
 </Window>
